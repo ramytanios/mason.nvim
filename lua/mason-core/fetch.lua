@@ -33,7 +33,7 @@ local function fetch(url, opts)
     if not opts.method then
         opts.method = "GET"
     end
-    opts.headers["User-Agent"] = USER_AGENT
+    --opts.headers["User-Agent"] = USER_AGENT
     log.fmt_debug("Fetching URL %s", url)
 
     local platform_specific = Result.failure
